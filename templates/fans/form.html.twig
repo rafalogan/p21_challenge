@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>{{ title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <button type="submit">Salvar</button>
+            <button type="reset">Cancelar</button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
